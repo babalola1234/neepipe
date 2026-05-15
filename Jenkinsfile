@@ -19,12 +19,8 @@ pipeline {
         }
 		stage('make redht user') {
             steps {
-				sh '''
-PASSWORD=$(openssl passwd -6 "redhat")
-sudo useradd -m -s /bin/bash -p "$PASSWORD" redhat
-'''
-
-			
+				sh 'useradd redhat'
+		
             }
         }
     }
