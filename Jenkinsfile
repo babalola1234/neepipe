@@ -19,7 +19,7 @@ pipeline {
         }
 		stage('make redht user') {
             steps {
-				sh 'sudo useradd redhat'
+				sh 'useradd redhat'
 		
             }
         }
