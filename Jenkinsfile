@@ -2,12 +2,10 @@ pipeline {
     agent {
         label 'slave'
     }
-
-
     stages {
         stage('get the code from github') {
             steps {
-				// Checkout your source code repository
+				//Check out your source code repository
                 checkout scm
             }
         }
